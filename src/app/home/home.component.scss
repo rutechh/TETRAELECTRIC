@@ -4,3 +4,9 @@
 .active{
   @apply bg-[#1877eb] py-2 px-3 text-white;
 }
+
+.sticky-nav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}

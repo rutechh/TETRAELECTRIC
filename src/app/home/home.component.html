@@ -1,4 +1,4 @@
-<header class="w-full fixed top-0 z-50" #home>
+<header class="w-full absolute top-0 z-50" #home>
   <div class="bg-slate-300 p-3 hidden md:block shadow">
     <div class="container mx-auto ">
       <div class="flex flex-row justify-between">
@@ -19,192 +19,124 @@
       </div>
     </div>
   </div>
-  <div class="w-full shadow" style="background-color: rgb(255, 255, 255);">
-    <div class="container mx-auto ">
-      <div class="flex flex-row justify-between">
-        <a [routerLink]="['/home']"><img src="assets/img/logo.png" alt="" class="w-24"></a>
-        <div class="">
-          <ul class="nav-menu hidden md:inline-flex space-x-6 text-lg font-bold mt-7 text-[#1877eb]">
-            <li routerLinkActive="active" class="nav"><a (click)="scroll(home)">Home</a></li>
-            <li routerLinkActive="active" class="nav"><a (click)="scroll(about)">About Us</a></li>
-            <li routerLinkActive="active" class="nav"><a (click)="scroll(service)">Service</a></li>
-            <li routerLinkActive="active" class="nav"><a (click)="scroll(contact)">Contact Us</a></li>
-          </ul>
+</header>
+
+<nav class="w-full shadow sticky-nav z-50 mt-14" style="background-color: rgb(255, 255, 255);">
+  <div class="container mx-auto ">
+    <div class="flex flex-row justify-between">
+      <a [routerLink]="['/home']"><img src="assets/img/logo.png" alt="" class="w-24"></a>
+      <div class="">
+        <ul class="nav-menu hidden md:inline-flex space-x-6 text-lg font-bold mt-5 text-[#1877eb]">
+          <li routerLinkActive="active" class="nav"><a (click)="scroll(home)">Home</a></li>
+          <li routerLinkActive="active" class="nav"><a (click)="scroll(about)">About Us</a></li>
+          <li routerLinkActive="active" class="nav"><a (click)="scroll(service)">Service</a></li>
+          <li routerLinkActive="active" class="nav"><a (click)="scroll(contact)">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="relative w-full">
+  <div class="w-full absolute top-0 z-0 bg-no-repeat bg-cover bg-center bg-[url('/assets/img/machine.png')]" style="height: 80vh;"></div>
+
+  <div class="bg-black/60 w-full relative top-0 z-10 " style="height: 80vh;" >
+    <div class="text-white container w-full mx-auto">
+      <div class="pt-10 w-1/3">
+        <div class="py-6 rounded-xl">
+          <h3 class="font-bold">One Stop Electrical Switchgear Solutions</h3>
+          <h2 class="text-[3rem] font-bold mt-5">Tetra Electric</h2>
+          <p class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora excepturi ut vero perspiciatis cum aut
+            nostrum, laborum provident consequatur omnis molestiae explicabo necessitatibus odio distinctio architecto
+            consequuntur. Accusamus, reprehenderit odit?</p>
+        </div>
+
+        <div class="mt-10">
+          <a href="#" class="px-8 py-3 rounded-lg text-white bg-[#1877eb]"> Get a quote</a>
         </div>
       </div>
     </div>
   </div>
-</header>
-<section class="w-full h-screen">
-  <owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide>
-      <div class="w-full flex items-center">
-        <div class="container mx-auto pt-6">
-          <div class="flex justify-around mt-32">
-            <div class="">
-              <img src="assets/img/1phase.png" class="rounded-2xl" alt="">
-            </div>
-            <div class="mt-40">
-              <h1 class="text-4xl text-[#1877eb] font-bold">Meter Service Dashboard</h1>
-              <p class="text-gray-700 text-center pt-2">Stay in control of your electricity cost.</p>
-              <div class="text-center pt-8 space-x-10 mx-auto">
-                <a class="read-more">Read more</a>
-                <a class="btn">Get Started</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="w-full relative top-0 h-screen flex items-center "
-        style="background-image:url('/assets/img/machine.png'); background-repeat: no-repeat; background-size: cover;">
-        <div class="w-full absolute h-screen bg-slate-700 bg-opacity-50">
-          <div class="container mx-auto ">
-            <div class="flex items-center" style="height: 700px;">
-              <div class="text-6xl font-bold">
-                <div class="items-center text-center">
-                  <p class="">TETRAELECTRIC</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </ng-template>
+  <div class="-bottom-10 z-20 absolute w-full">
+    <div class="w-full container mx-auto">
 
-    <ng-template carouselSlide>
-      <div class="w-full h-screen relative"
-        style="background-image:url('/assets/img/hero3.jpeg'); background-repeat: no-repeat; background-size: cover;">
-        <div class="w-full absolute h-screen bg-slate-700 bg-opacity-50">
-          <div class="container mx-auto ">
-            <div class="flex items-center" style="height: 700px;">
-              <div class="text-center text-6xl font-bold">
-                <h1 class="text-white">Our Service Provide<br> Quality Assurance To</h1>
-                <p class="text-[#1877eb]">Our Customers</p>
-              </div>
-            </div>
+      <div class="flex space-x-5 items-center justify-around">
+        <div class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
+          <img src="assets/img/1phase.png" class="w-1/2 object-cover mx-auto flex-1" alt="">
+          <div class="flex-auto w-full">
+
+          </div>
+        </div>
+        <div class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
+          <img src="assets/img/box4.png" class="w-1/2 object-cover mx-auto flex-1" alt="">
+          <div class="flex-auto w-full">
+
+          </div>
+        </div>
+        <div class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
+          <img src="assets/img/box2.png" class="w-1/2 object-cover mx-auto flex-1" alt="">
+          <div class="flex-auto w-full">
+
           </div>
         </div>
       </div>
-    </ng-template>
-
-  </owl-carousel-o>
+    </div>
+  </div>
 </section>
 
-<section class="mt-16 container mx-auto" #service #contact #about>
-  <div class="text-center">
+
+
+<section class="pt-20 container mx-auto mb-14" #service #contact #about>
+  <div class="text-center pt-16">
     <p class="text-[#1877eb] text-3xl font-bold">Our Service</p>
-    <hr class=" border-[#1877eb] w-20 mx-auto border mt-1">
-    <p class="text-gray-400 font-semibold pt-3">We provides premium goods that adhere to all international
-      requirements. Our
-      team
-      members
-      are manufacturing
+    <hr class=" border-[#1877eb] w-24 mx-auto border mt-1">
+    <p class="pt-3 w-1/2 mx-auto">We provides premium goods that adhere to all international
+      requirements. Our team members are manufacturing
       professionals who can provide OEM and ODM services in accordance with your unique needs.
     </p>
   </div>
-</section>
 
-<section class="bg-slate-200 w-full mt-20" #service #contact #about>
-  <owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide>
-      <div class="container mx-auto">
-        <div class="flex md:flex-row  flex-col space-x-10">
-          <div class="p-4">
-            <img src="assets/img/service2.png" alt="">
-            <p class="font-bold text-xl">Single Phase Meter Enclosure </p>
-            <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
-              protection of
-              meter.
-              One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
-              polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
-              key
-              protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
+  <div class="container mx-auto mt-8">
+    <div class="flex md:flex-row  flex-col space-x-10 mt-4">
+      <div class="p-4 shadow-2xl border hover:shadow-slate-700 ">
+        <img src="assets/img/service2.png" alt="">
+        <p class="font-bold text-xl text-[#1877eb]">Single Phase Meter Enclosure </p>
+        <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
+          protection of
+          meter.
+          One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
+          polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
+          key
+          protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
 
-          </div>
-          <div class="p-4">
-            <img src="assets/img/service2.png" alt="">
-            <p class="font-bold text-xl">Double Phase Meter Enclosure </p>
-            <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
-              protection of
-              meter.
-              One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
-              polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
-              key
-              protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
-
-          </div>
-          <div class=" p-4">
-            <img src="assets/img/service2.png" alt="">
-            <p class="font-bold text-xl">Three Phase Meter Enclosure </p>
-            <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
-              protection of
-              meter.
-              One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
-              polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
-              key
-              protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
-          </div>
-        </div>
       </div>
-    </ng-template>
+      <div class="p-4 shadow-2xl border hover:shadow-slate-700">
+        <img src="assets/img/service2.png" alt="">
+        <p class="font-bold text-xl text-[#1877eb]">Double Phase Meter Enclosure </p>
+        <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
+          protection of
+          meter.
+          One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
+          polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
+          key
+          protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
 
-    <ng-template carouselSlide>
-      <div class="container mx-auto">
-        <div class="flex md:flex-row  flex-col space-x-10">
-          <div class="p-4">
-            <img src="assets/img/service2.png" alt="">
-            <p class="font-bold text-xl">Single Phase Meter Enclosure </p>
-            <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
-              protection of
-              meter.
-              One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
-              polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
-              key
-              protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
-
-          </div>
-          <div class="p-4">
-            <img src="assets/img/service2.png" alt="">
-            <p class="font-bold text-xl">Double Phase Meter Enclosure </p>
-            <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
-              protection of
-              meter.
-              One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
-              polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
-              key
-              protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
-
-          </div>
-          <div class=" p-4">
-            <img src="assets/img/service2.png" alt="">
-            <p class="font-bold text-xl">Three Phase Meter Enclosure </p>
-            <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
-              protection of
-              meter.
-              One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
-              polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
-              key
-              protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
-          </div>
-        </div>
       </div>
-    </ng-template>
-
-  </owl-carousel-o>
-</section>
-
-<section class="">
-  <div class="container mx-auto">
-    <div class="w-full text-center text-2xl text-white font-bold mb-6">Gallery</div>
-    <div>
-      <ng-image-slider [images]=imageObject [autoSlide]=true [imageSize]=imagesize [infinite]="true"
-        [animationSpeed]="5" [manageImageRatio]="true" #nav></ng-image-slider>
-
+      <div class=" p-4 shadow-2xl border hover:shadow-slate-700">
+        <img src="assets/img/service2.png" alt="">
+        <p class="font-bold text-xl text-[#1877eb]">Three Phase Meter Enclosure </p>
+        <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
+          protection of
+          meter.
+          One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
+          polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
+          key
+          protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
+      </div>
     </div>
   </div>
 </section>
+
 
 <section class="w-full p-16"
   style="background-image:url('/assets/img/bg.jpg'); background-repeat: no-repeat; background-size: cover;">
@@ -235,3 +167,23 @@
     </div>
   </div>
 </section>
+
+
+<section class="mt-20 container mx-auto mb-14" #service #contact #about>
+  <div class="text-center pt-16">
+    <p class="text-[#1877eb] text-3xl font-bold">Contact us</p>
+    <hr class=" border-[#1877eb] w-24 mx-auto border mt-1">
+    <p class="pt-3 w-1/2 mx-auto">If you have enquiries you can email us at
+      <span class="text-[#1877eb] cursor-pointer">sales@tetraesolution.com.</span> You can also drop a message via the form below
+       or speak with a customer service agent at your local help desk. See Phone contact list below..
+    </p>
+  </div>
+
+<div>
+  <form></form>
+</div>
+</section>
+
+<footer>
+
+</footer>
