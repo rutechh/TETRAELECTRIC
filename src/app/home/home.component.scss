@@ -10,3 +10,10 @@
   position: sticky;
   top: 0;
 }
+textarea, input {
+  @apply  rounded-sm w-full ring-1 ring-[#969696] ring-opacity-20 focus:outline-none bg-[#F9F9F9] px-2 py-2 mt-2;
+}
+label{
+  @apply text-sm text-gray-400;
+}
+

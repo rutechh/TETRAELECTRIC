@@ -27,10 +27,10 @@
       <a [routerLink]="['/home']"><img src="assets/img/logo.png" alt="" class="w-24"></a>
       <div class="">
         <ul class="nav-menu hidden md:inline-flex space-x-6 text-lg font-bold mt-5 text-[#1877eb]">
-          <li routerLinkActive="active" class="nav"><a (click)="scroll(home)">Home</a></li>
-          <li routerLinkActive="active" class="nav"><a (click)="scroll(about)">About Us</a></li>
-          <li routerLinkActive="active" class="nav"><a (click)="scroll(service)">Service</a></li>
-          <li routerLinkActive="active" class="nav"><a (click)="scroll(contact)">Contact Us</a></li>
+          <li routerLinkActive="active" [routerLink]="['/home']" class="nav"><a>Home</a></li>
+          <li routerLinkActive="active" [routerLink]="['/about']" class="nav"><a>About Us</a></li>
+          <li routerLinkActive="active" [routerLink]="['/service']" class="nav"><a>Products</a></li>
+          <li routerLinkActive="active" [routerLink]="['/contact']" class="nav"><a>Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -38,20 +38,20 @@
 </nav>
 
 <section class="relative w-full">
-  <div class="w-full absolute top-0 z-0 bg-no-repeat bg-cover bg-center bg-[url('/assets/img/machine.png')]" style="height: 80vh;"></div>
+  <div class="w-full absolute top-0 z-0 bg-no-repeat bg-cover bg-center bg-[url('/assets/img/machine.png')]"
+    style="height: 80vh;"></div>
 
-  <div class="bg-black/60 w-full relative top-0 z-10 " style="height: 80vh;" >
+  <div class="bg-black/60 w-full relative top-0 z-10 " style="height: 80vh;">
     <div class="text-white container w-full mx-auto">
       <div class="pt-10 w-1/3">
         <div class="py-6 rounded-xl">
           <h3 class="font-bold">One Stop Electrical Switchgear Solutions</h3>
-          <h2 class="text-[3rem] font-bold mt-5">Tetra Electric</h2>
-          <p class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora excepturi ut vero perspiciatis cum aut
-            nostrum, laborum provident consequatur omnis molestiae explicabo necessitatibus odio distinctio architecto
-            consequuntur. Accusamus, reprehenderit odit?</p>
+          <h2 class="text-[3rem] font-bold ">Tetraelectric</h2>
+          <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora excepturi ut vero
+            perspiciatis cum aut</p>
         </div>
 
-        <div class="mt-10">
+        <div>
           <a href="#" class="px-8 py-3 rounded-lg text-white bg-[#1877eb]"> Get a quote</a>
         </div>
       </div>
@@ -61,34 +61,70 @@
     <div class="w-full container mx-auto">
 
       <div class="flex space-x-5 items-center justify-around">
-        <div class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
-          <img src="assets/img/1phase.png" class="w-1/2 object-cover mx-auto flex-1" alt="">
-          <div class="flex-auto w-full">
+        <a [routerLink]="['/service']" class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
+          <img src="assets/img/1phase.png" class="w-1/2 object-cover mx-auto " alt="">
+          <img src="assets/img/box4.png" class="w-1/2 object-cover mx-auto " alt="">
 
-          </div>
-        </div>
-        <div class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
-          <img src="assets/img/box4.png" class="w-1/2 object-cover mx-auto flex-1" alt="">
-          <div class="flex-auto w-full">
+        </a>
 
-          </div>
-        </div>
-        <div class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
-          <img src="assets/img/box2.png" class="w-1/2 object-cover mx-auto flex-1" alt="">
-          <div class="flex-auto w-full">
+        <a [routerLink]="['/service']" class="bg-white w-full items-center flex-1 flex shadow-2xl h-[250px]">
+          <img src="assets/img/panel.png" class=" object-cover " alt="">
 
-          </div>
-        </div>
+        </a>
+        <a [routerLink]="['/service']" class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
+          <img src="assets/img/service.jpeg" class="w-1/2 object-cover mx-auto flex-1" alt="">
+          <img src="assets/img/service2jpeg.jpeg" class="w-1/2 object-cover mx-auto flex-1" alt="">
+
+        </a>
       </div>
     </div>
   </div>
 </section>
 
 
+<section class="w-full p-16"
+  style="background-image:url('/assets/img/bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+  <div class="container mx-auto mt-16">
+    <p class="text-xl font-bold text-[#1877eb]">Why You Should Choose Us ?</p>
+    <hr class=" border-[#1877eb] w-20  border mt-1">
+    <div class="flex flex-col md:flex-row justify-around">
+      <div class="md:w-2/5  w-full  pt-8">
+        <p>We pride ourselves on our customer service and support. Our team is available to answer any questions you
+          have about our products or your project. We have a 24/7 support line so you can always get in touch with us.
+        </p>
+        <div class="mt-3 space-x-2 flex">
+          <i class="fa fa-check text-[#1877eb] pt-1"></i>
+          <p class="text-"><span class="text-lg font-bold text-[#1877eb]">Accurate Testing:</span> Our electricity meter
+            boxes are
+            tested
+            for accuracy and precision before they leave the factory. This ensures that our customers get the best
+            possible product.</p>
+        </div>
+        <div class="mt-3 space-x-2 flex">
+          <i class="fa fa-check text-[#1877eb] pt-1"></i>
+          <p class="text-"><span class="text-lg font-bold text-[#1877eb]">Certified Product: </span> When you choose
+            TETRAELECTRIC, you can be sure that you’re getting the best products on the market. All of our electric
+            meter boxes are certified to the latest international standards. This means that they are safe to use and
+            will last for years to come. </p>
+        </div>
+        <div class="mt-3 space-x-2 flex">
+          <i class="fa fa-check text-[#1877eb] pt-1"></i>
+          <p class="text-"><span class="text-lg font-bold text-[#1877eb]">Industry Standards: </span> Every product is
+            put through
+            testing to make sure it complies with the most recent global standards. To ensure that they reach the
+            highest standards, we are always inventing and enhancing our products.</p>
+        </div>
+      </div>
+      <div class="md:w-2/6 w-full pt-4">
+        <img src="assets/img/logo.png" alt="" class="">
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="pt-20 container mx-auto mb-14" #service #contact #about>
+<section class="pt-20 container mx-auto mb-14">
   <div class="text-center pt-16">
-    <p class="text-[#1877eb] text-3xl font-bold">Our Service</p>
+    <a [routerLink]="['/service']" class="text-[#1877eb] text-3xl font-bold">Our Products</a>
     <hr class=" border-[#1877eb] w-24 mx-auto border mt-1">
     <p class="pt-3 w-1/2 mx-auto">We provides premium goods that adhere to all international
       requirements. Our team members are manufacturing
@@ -99,89 +135,134 @@
   <div class="container mx-auto mt-8">
     <div class="flex md:flex-row  flex-col space-x-10 mt-4">
       <div class="p-4 shadow-2xl border hover:shadow-slate-700 ">
-        <img src="assets/img/service2.png" alt="">
-        <p class="font-bold text-xl text-[#1877eb]">Single Phase Meter Enclosure </p>
-        <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
-          protection of
-          meter.
-          One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
-          polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
-          key
-          protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
-
+        <img src="assets/img/panel.jpeg" alt="" class="items-center mx-auto">
+        <p class="font-bold text-xl text-[#1877eb] text-center mt-8">Low Voltage Distribution Panel</p>
+        <p class="mt-4 p-4">DP31 series Low voltage distribution panel is specially
+          designed for the purpose of power distribution and protection
+          This series product are highly customized based on the
+          projects requirement: The enclosure size and material; in
+          coming MCCB capacity; outgoing MCCB quantity and
+          capacity; Copper Busbar, SPD equipments; Isolation and
+          earth leakage protection; lighting, door security equipment
+          and installation methods etc. Even we can add the energy
+          meter for whole power consumption measure. This series
+          product are widely used in city, village etc.</p>
+        <div class="mt-10 space-x-4 text-center">
+          <button class="bg-[#1877eb] text-white py-2 px-4">Learn more <i class="fa fa-arrow-right"></i></button>
+        </div>
       </div>
+
       <div class="p-4 shadow-2xl border hover:shadow-slate-700">
-        <img src="assets/img/service2.png" alt="">
-        <p class="font-bold text-xl text-[#1877eb]">Double Phase Meter Enclosure </p>
-        <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
-          protection of
-          meter.
-          One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
-          polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
-          key
-          protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
+        <img src="assets/img/mu33.jpeg" alt="" class="items-center mx-auto ">
+        <p class="font-bold text-xl text-[#1877eb] mt-6">Three Phase LV CT Postpaid Metering Unit</p>
+        <p class="mt-4">MU33 Series metering unit is specially designed
+          for the large power user and can achieve the
+          postpaid function. It is equipped with high
+          precision smart energy meter, which has a plug
+          and play communication module for remote
+          reading and controlling; current transformers and
+          Box for outdoor usage. It is a ideal product for
+          Utilities and Distribution company to reduce
+          energy loss and revenue protection. It is suitable
+          to be used for villa, commercial and industrial
+          projects.
+        </p>
+        <div class="mt-10 space-x-4 text-center">
+          <button class="bg-[#1877eb] text-white py-2 px-4">Learn more <i class="fa fa-arrow-right"></i></button>
+        </div>
 
       </div>
+
       <div class=" p-4 shadow-2xl border hover:shadow-slate-700">
-        <img src="assets/img/service2.png" alt="">
-        <p class="font-bold text-xl text-[#1877eb]">Three Phase Meter Enclosure </p>
-        <p class="mt-4">ME13 Single phase meter enclosure is specially designed for the purpose of anti-tamper and
-          protection of
-          meter.
-          One DIN rail type meter and one 2P MCB can be mounted with bottom connection. The material of enclosure is
-          polycarbonate with UV resistance and V0 frame resistance degree. Pole mounted or wall mounted or lock and
-          key
-          protection are based on project demand. Alarm sensor for enclosure opening is reserved function.</p>
+        <img src="assets/img/3phasemeter.jpeg" alt="" class="mx-auto pt-7">
+        <p class="font-bold text-xl text-[#1877eb] mt-10">Three Phase Meter Enclosure </p>
+        <p class="mt-4">ME32 Three phase meter enclosure is specially designed for
+          the purpose of anti-tamper and protection of meter. One three
+          phase BS type meter and one 4P MCB can be mounted with
+          bottom connection. The enclosure is with transparent window,
+          transparent/non-transparent top cover and non-transparent
+          base. The material of enclosure is polycarbonate with UV
+          resistance and V0 frame resistance degree. Pole mounted or
+          Wall mounted or lock and key protection are based on project
+          demand. Alarm sensor for enclosure opening is reserved
+          function.</p>
+        <div class="mt-10 space-x-4 text-center">
+          <button class="bg-[#1877eb] text-white py-2 px-4">Learn more <i class="fa fa-arrow-right"></i></button>
+        </div>
+
       </div>
+
     </div>
   </div>
 </section>
 
-
-<section class="w-full p-16"
-  style="background-image:url('/assets/img/bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+<section class="mt-20  mb-14"
+  style="background-image:url('/assets/img/contactbg.jpg'); background-repeat: no-repeat; background-size: cover;">
   <div class="container mx-auto">
-    <p class="text-xl font-bold text-[#1877eb]">Why You Should Choose Us ?</p>
-    <hr class=" border-[#1877eb] w-20  border mt-1">
-    <div class="flex flex-col md:flex-row justify-around">
-      <div class="md:w-2/5  w-full md:pt-16 pt-8">
-        <p class="text-">Our Job: Your Success. We do all it takes to put all the little together that makes your
-          solution stand out
-          and fit into your Business.</p>
-        <div class="mt-3 space-x-2 flex">
-          <i class="fa fa-check text-[#1877eb] pt-1"></i>
-          <p>It is our prior motive to help our client achieve their most sought after objective</p>
+    <div class="text-center pt-16">
+      <p class="text-[#1877eb] text-3xl font-bold">Contact us</p>
+      <hr class=" border-[#1877eb] w-24 mx-auto border mt-1">
+      <p class="pt-3 w-1/2 mx-auto">If you have enquiries you can email us at
+        <span class="text-[#1877eb] cursor-pointer">sales@tetraesolution.com.</span> You can also drop a message via the
+        form below
+        or speak with a customer service agent at your local help desk. See Phone contact list below..
+      </p>
+    </div>
+
+    <div>
+      <div class=" flex flex-col md:flex-row justify-around pb-12 pt-16">
+        <div class="w-full">
+          <form action="https://mailthis.to/ruth" method="POST" encType="multipart/form-data">
+            <div class="mt-8">
+              <label>Full Name</label>
+              <input placeholder=" John Doe" class="form-input" name="name" required>
+            </div>
+            <div class="mt-8">
+              <label>Email</label>
+              <input placeholder=" johndoe@johndoe.com" name="sender" class="form-input" required>
+            </div>
+            <div class="mt-8">
+              <label>Message</label>
+              <textarea placeholder=" Type your message here" name="message" class=" h-32 p-3 mt-2" required></textarea>
+            </div>
+            <div>
+              <input type="hidden" name="_confirmation" value="">
+
+            </div>
+            <div class="mt-8  ">
+              <button class="rounded-lg bg-[#1877eb]  text-white px-12 py-2" type="submit" value="Send">Submit </button>
+            </div>
+          </form>
         </div>
-        <div class="mt-3 space-x-2 flex">
-          <i class="fa fa-check text-[#1877eb] pt-1"></i>
-          <p>It is our prior motive to help our client achieve their most sought after objective</p>
+        <div class="w-full pl-0 pt-16 md:pl-20">
+          <div class="flex">
+            <div class="flex flex-row space-x-2 items-center">
+              <img src="assets/img/call.svg" alt="">
+              <span class="font-bold md:text-3xl text-2xl">Or call us on;</span>
+            </div>
+          </div>
+
+          <div class="pt-8 md:pt-12">
+            <div class="flex flex-row space-x-4 items-center">
+              <img src="assets/img/usa.svg" alt="">
+              <p>USA</p>
+              <p class="text-lg text-[#1877eb] font-bold">+1(312) 872 2863</p>
+            </div>
+            <div class="flex flex-row space-x-4 items-center mt-5">
+              <img src="assets/img/ke.svg" alt="">
+              <p>KE</p>
+              <p class="text-lg text-[#1877eb] font-bold">+254 207 640 776</p>
+            </div>
+            <div class="flex flex-row space-x-4 items-center mt-5">
+              <img src="assets/img/nig.svg" alt="">
+              <p>NIG</p>
+              <p class="text-lg text-[#1877eb] font-bold">+234 908 779 2968</p>
+            </div>
+          </div>
         </div>
-        <div class="mt-3 space-x-2 flex">
-          <i class="fa fa-check text-[#1877eb] pt-1"></i>
-          <p>It is our prior motive to help our client achieve their most sought after objective</p>
-        </div>
-      </div>
-      <div class="md:w-2/6 w-full pt-4">
-        <img src="assets/img/logo.png" alt="" class="">
       </div>
     </div>
   </div>
-</section>
-
-
-<section class="mt-20 container mx-auto mb-14" #service #contact #about>
-  <div class="text-center pt-16">
-    <p class="text-[#1877eb] text-3xl font-bold">Contact us</p>
-    <hr class=" border-[#1877eb] w-24 mx-auto border mt-1">
-    <p class="pt-3 w-1/2 mx-auto">If you have enquiries you can email us at
-      <span class="text-[#1877eb] cursor-pointer">sales@tetraesolution.com.</span> You can also drop a message via the form below
-       or speak with a customer service agent at your local help desk. See Phone contact list below..
-    </p>
-  </div>
-
-<div>
-  <form></form>
-</div>
 </section>
 
 <footer>
