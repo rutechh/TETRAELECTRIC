@@ -9,6 +9,7 @@ import { NgImageSliderComponent } from 'ng-image-slider';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  year: number = new Date().getFullYear();
 
   constructor() { }
 

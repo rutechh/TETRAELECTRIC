@@ -1,3 +1,1457 @@
-<p>
-  service works!
-</p>
+<div class="relative bg-cover bg-no-repeat w-full h-screen" style="background-image:url('assets/img/about.jpeg')"></div>
+<section class="w-full absolute top-0 h-screen bg-slate-900/70">
+  <header class="w-full absolute top-0 z-50" #home>
+    <div class="bg-slate-300 p-3 hidden md:block shadow">
+      <div class="container mx-auto ">
+        <div class="flex flex-row justify-between">
+          <div class="space-x-3">
+            <i class="fa fa-envelope text-[#1877eb]"></i>
+            <a class="hover:underline text-xs cursor-pointer text-gray-600 uppercase">sales@tetraesolutions.com</a>
+          </div>
+          <div class="flex space-x-4">
+            <div class="space-x-3">
+              <i class="fa fa-phone text-[#1877eb]"></i>
+              <a class="hover:underline text-xs cursor-pointer text-gray-600 uppercase">CALL US: +234 803 407 3880</a>
+            </div>
+            <div class="space-x-3">
+              <i class="fa fa-phone text-[#1877eb]"></i>
+              <a class="hover:underline text-xs cursor-pointer text-gray-600 uppercase">CALL US: +234 803 407 3880</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="w-full shadow sticky-nav z-50 mt-12" style="background-color: rgb(255, 255, 255);">
+    <div class="container mx-auto ">
+      <div class="flex flex-row justify-between">
+        <a [routerLink]="['/home']"><img src="assets/img/logo.png" alt="" class="w-24"></a>
+        <div class="">
+          <ul class="nav-menu hidden md:inline-flex space-x-6 text-lg font-bold mt-5 text-[#1877eb]">
+            <li routerLinkActive="active" [routerLink]="['/home']" class="nav"><a>Home</a></li>
+            <li routerLinkActive="active" [routerLink]="['/home']" class="nav"><a>About Us</a></li>
+            <li routerLinkActive="active" [routerLink]="['/service']" class="nav"><a>Products</a></li>
+            <li routerLinkActive="active" [routerLink]="['/home']" class="nav"><a>Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container mx-auto">
+    <div class="text-center text-white md:pt-[245px] md:pb-[213px] pt-[145px] pb-[113px]">
+      <div>
+        <p class="text-3xl md:text-5xl font-bold">TETRAELECTRIC SOLUTIONS LTD</p>
+      </div>
+      <div class="pt-8 w-full md:w-2/4 text-center mx-auto text-gray-300">
+        <p>We pride ourselves on our customer service and support. Our team is available to answer any questions you
+          have about our products or your project. We have a 24/7 support line so you can always get in touch with us.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="my-20 container mx-auto">
+  <div>
+    <p class="text-[40px] font-bold text-center">Our Products</p>
+    <p class="mx-auto w-3/5 text-center text-[16px] pt-6">Our 5 major product offerings lie along the end-to-end value
+      chain of a deal execution pipeline, from Deal Sourcing, to Financing and Trade Logistics.</p>
+  </div>
+
+  <div class="mt-20">
+    <mat-tab-group>
+      <mat-tab label="Metering Panel">
+        <div class="mt-10">
+          <p class="text-4xl font-bold  text-[#1877eb]">11KV Metering Panel <span class="text-lg">MP11</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">MP11 Series metering Panel is specially designed for the
+                  HT Metering as per IEC Standards& Nigerian/Ghana
+                  Specification of Local statutory authorities. large power user
+                  and can achieve the prepayment function. It is equipped
+                  with high precision smart energy meter, CT, VT; Bus bar;
+                  Surge arrester equipment and panel with IP54 protection
+                  for outdoor usage. The CT and VT are mounted in separate
+                  compartment with safe creepage distance. Easy excess for
+                  connection of Inward and Outward Cable in Bottom
+                  Compartment. It is an ideal product for Utilities and
+                  Distribution company to reduce energy loss and revenue
+                  protection. It is suitable to be used for commercial and
+                  industrial projects.</p>
+              </div>
+              <div class="mt-10 flex space-x-5">
+                <img src="assets/img/panel2.jpeg" alt="">
+                <img src="assets/img/panel22.jpeg" alt="">
+              </div>
+              <div class=" mt-14">
+                <p class="text-[#1877eb] text-3xl font-bold">Features</p>
+                <div class="flex space-x-5 mt-3">
+                  <div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Heater to reduce humidity</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">High accuracy class</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Reserved split type CIU for meter reading and checking</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Separate compartment for better safety</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Maximum demand</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Outdoor usage</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METER</p>
+                <div class="flex space-x-5 mt-3">
+                  <div>
+                    <p class="text-xl font-bold pb-3">DESCRIPTION</p>
+                    <p>Accuracy</p>
+                    <p>Rated Voltage</p>
+                    <p>Operation voltage range</p>
+                    <p>Current</p>
+                    <p>Power consumption</p>
+                    <p>Protection class</p>
+                    <p>RTC</p>
+                  </div>
+                  <div>
+                    <p class="text-xl font-bold pb-3">PARAMETER</p>
+                    <p>Active class 0.5s, reactive class 2.0</p>
+                    <p>3*57.5V/110V</p>
+                    <p>0.7Un-1.2ur</p>
+                    <p>1(10)A</p>
+                    <p>Voltage circuit (Un): 2W/5VA</p>
+                    <p>Current circuit (in): 0.5VA IP54</p>
+                    <p></p>
+                    <p>is/day (in 23℃)</p>
+                  </div>
+                </div>
+                <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METERING PANEL</p>
+                <div class="flex space-x-5">
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">20/1A metering unit</p>
+                    <div class="flex space-x-8 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Type</p>
+                        <p>Mounting</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>20/1</p>
+                        <p>Outdoor/Indoor</p>
+                        <p>Ground mounting</p>
+                        <p>Painted steel</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">100/1A metering unit</p>
+                    <div class="flex space-x-5 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Type</p>
+                        <p>Mounting</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>100/1</p>
+                        <p>Outdoor/Indoor</p>
+                        <p>Ground mounting</p>
+                        <p>Painted steel</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-2 mt-4">
+
+        <div class="mt-10">
+          <p class="text-4xl font-bold text-[#1877eb]">Three Phase LV CT Prepayment Metering Unit <span
+              class="text-lg">MU32</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">MU32 Series metering unit is specially designed for the
+                  large power user and can achieve the prepayment
+                  function. It is equipped with high precision smart energy
+                  meter, which comply with STS standard and have a plug
+                  and play communication module for remote reading and
+                  controlling; current transformers; MCCB with automatically
+                  reclose function; Bus bar; Surge arrester equipment and
+                  Box for outdoor usage. It is a ideal product for Utilities and
+                  Distribution company to reduce energy loss and revenue
+                  protection. It is suitable to be used for villa, commercial and
+                  industrial projects.</p>
+              </div>
+              <div class="mt-10 flex space-x-5">
+                <img src="assets/img/panel33.jpeg" alt="">
+                <img src="assets/img/panel333.jpeg" alt="">
+              </div>
+              <div class=" mt-14">
+                <p class="text-[#1877eb] text-3xl font-bold">Features</p>
+                <div class="flex space-x-5 mt-3">
+                  <div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">MCCB with automatically reclose</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Plug and play communication module</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">High accuracy class</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Maximum demand</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Split type and recharged through UIU</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Exchange between postpaid and prepayment mode</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Outdoor usage</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METER</p>
+                <div class="flex space-x-5 mt-3">
+                  <div>
+                    <p class="text-xl font-bold pb-3">DESCRIPTION</p>
+                    <p>Accuracy</p>
+                    <p>Rated Voltage</p>
+                    <p>Operation voltage range</p>
+                    <p>Curren</p>
+                    <p>Power consumption</p>
+                    <p>Protection class</p>
+                    <p>RTC</p>
+                  </div>
+                  <div>
+                    <p class="text-xl font-bold pb-3">PARAMETER</p>
+                    <p>Active class 0.5s, reactive class 2.0</p>
+                    <p>3*57.5V/110V</p>
+                    <p>0.7Un-1.2ur</p>
+                    <p>1(10)A</p>
+                    <p>Voltage circuit (Un): 2W/5VA</p>
+                    <p>Current circuit (in): 0.5VA</p>
+                    <p>IP54</p>
+                    <p>is/day (in 23℃)</p>
+                  </div>
+                </div>
+                <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METER UNIT</p>
+                <div class="flex space-x-5">
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">200A metering unit</p>
+                    <div class="flex space-x-8 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Box dimension</p>
+                        <p>Weight</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>200/5</p>
+                        <p>725mmx252mmx170mm</p>
+                        <p>Approx. 15kg</p>
+                        <p>Stainless steel 201</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">500A metering unit</p>
+                    <div class="flex space-x-5 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Box dimension</p>
+                        <p>Weight</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>500/5</p>
+                        <p>1000mmx800mmx250mm </p>
+                        <p>Approx. 54kg</p>
+                        <p>Stainless steel 201</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex space-x-5 mt-8">
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">300A metering unit </p>
+                    <div class="flex space-x-8 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Box dimension</p>
+                        <p>Weight</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>300/5</p>
+                        <p>700mmx480mmx210mm</p>
+                        <p>Approx. 23kg</p>
+                        <p>Stainless steel 201</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">800A metering unit</p>
+                    <div class="flex space-x-5 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Box dimension</p>
+                        <p>Weight</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>800/5</p>
+                        <p>1000mmx800mmx250mm </p>
+                        <p>Approx. 57kg</p>
+                        <p>Stainless steel 201</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-2 mt-4">
+
+        <div class="mt-10">
+          <p class="text-4xl font-bold text-[#1877eb]">33KV Metering Panel <span class="text-lg">MP31</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">MP31 Series metering Panel is specially designed for the
+                  HT Metering as per IEC Standards& Nigerian/Ghana
+                  Specification of Local statutory authorities. large power user
+                  and can achieve the prepayment function. It is equipped
+                  with high precision smart energy meter, CT, VT; Bus bar;
+                  Surge arrester equipment and panel with IP54 protection
+                  for outdoor usage. The CT and VT are mounted in separate
+                  compartment with safe creepage distance. Easy excess for
+                  connection of Inward and Outward Cable in Bottom
+                  Compartment. It is an ideal product for Utilities and
+                  Distribution company to reduce energy loss and revenue
+                  protection. </p>
+              </div>
+              <div class="mt-10 flex space-x-5">
+                <img src="assets/img/panel44.jpeg" alt="">
+                <img src="assets/img/panel444.jpeg" alt="">
+              </div>
+              <div class=" mt-14">
+                <p class="text-[#1877eb] text-3xl font-bold">Features</p>
+                <div class="flex space-x-5 mt-3">
+                  <div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Heater to reduce humidity</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Separate compartment for better safety</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">High accuracy class</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Maximum demand</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Outdoor usage</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Outdoor usage</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METER</p>
+                <div class="flex space-x-5 mt-3">
+                  <div>
+                    <p class="text-xl font-bold pb-3">DESCRIPTION</p>
+                    <p>Accuracy</p>
+                    <p>Rated Voltage</p>
+                    <p>Operation voltage range</p>
+                    <p>Current</p>
+                    <p>Power consumption</p>
+                    <p>Protection class</p>
+                    <p>RTC</p>
+                  </div>
+                  <div>
+                    <p class="text-xl font-bold pb-3">PARAMETER</p>
+                    <p>Active class 0.5s, reactive class 2.0</p>
+                    <p>3*57.5V/110V</p>
+                    <p>0.7Un-1.2ur</p>
+                    <p>1(10)A</p>
+                    <p>Voltage circuit (Un): 2W/5VA</p>
+                    <p>Current circuit (in): 0.5VA</p>
+                    <p>IP54</p>
+                    <p>is/day (in 23℃)</p>
+                  </div>
+                </div>
+                <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METERING PANEL</p>
+                <div class="flex space-x-5">
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">20/1A metering unit</p>
+                    <div class="flex space-x-8 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Type</p>
+                        <p>Mounting</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>20/1</p>
+                        <p>Outdoor/Indoor</p>
+                        <p>Ground mounting</p>
+                        <p>Painted steel </p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">50/1A metering unit</p>
+                    <div class="flex space-x-5 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Type</p>
+                        <p>Mounting</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>20/1</p>
+                        <p>Outdoor/Indoor </p>
+                        <p>Ground mounting</p>
+                        <p>Painted steel</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex space-x-5 mt-8">
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">100/1A metering unit</p>
+                    <div class="flex space-x-8 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Type</p>
+                        <p>Mounting</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>100/1</p>
+                        <p>Outdoor/Indoor</p>
+                        <p>Ground mounting</p>
+                        <p>Painted steel</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-2 mt-4">
+
+        <div class="mt-10">
+          <p class="text-4xl font-bold  text-[#1877eb]">Low Voltage Distribution Panel <span class="text-lg">DP31</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">DP31 series Low voltage distribution panel is specially
+                  designed for the purpose of power distribution and protection
+                  This series product are highly customized based on the
+                  projects requirement: The enclosure size and material; in
+                  coming MCCB capacity; outgoing MCCB quantity and
+                  capacity; Copper Busbar, SPD equipments; Isolation and
+                  earth leakage protection; lighting, door security equipment
+                  and installation methods etc. Even we can add the energy
+                  meter for whole power consumption measure. This series
+                  product are widely used in city, village etc.</p>
+              </div>
+              <div class="mt-10 flex space-x-5">
+                <img src="assets/img/panel5.jpeg" alt="">
+                <img src="assets/img/panel55.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS </p>
+                <div class="flex space-x-5 mt-3">
+                  <div>
+                    <p class="text-xl font-bold pb-3">DESCRIPTION</p>
+                    <p>Dimension</p>
+                    <p>Protection degree</p>
+                    <p>Material of enclosure</p>
+                    <p>Incoming MCCB</p>
+                    <p>Outgoing MCCB</p>
+                    <p>Quantity of Door</p>
+                    <p>Installation</p>
+                    <p>Color</p>
+                    <p>Earth Protection</p>
+                    <p>Metering </p>
+                  </div>
+                  <div class="whitespace-nowrap">
+                    <p class="text-xl font-bold pb-3">PARAMETER</p>
+                    <p>L1450mm*W400mm*H1100mm or customized</p>
+                    <p>IP54</p>
+                    <p>Stainless steel 201; Powder Coating Shade；or customized</p>
+                    <p>250A or customized</p>
+                    <p>5pcs 140A or customized</p>
+                    <p>2 for power distribution chamber and 1 for street lighting chamber</p>
+                    <p>Lifting hook or ground support</p>
+                    <p>RAL 7002 Olive or customized</p>
+                    <p>Equipped</p>
+                    <p>Customized, Energy meter and CT</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-2 mt-4">
+
+        <div class="mt-10">
+          <p class="text-4xl font-bold text-[#1877eb]">Three Phase LV CT Postpaid Metering Unit <span
+              class="text-lg">MU33</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">MU33 Series metering unit is specially designed
+                  for the large power user and can achieve the
+                  postpaid function. It is equipped with high
+                  precision smart energy meter, which has a plug
+                  and play communication module for remote
+                  reading and controlling; current transformers and
+                  Box for outdoor usage. It is a ideal product for
+                  Utilities and Distribution company to reduce
+                  energy loss and revenue protection. It is suitable
+                  to be used for villa, commercial and industrial
+                  projects.</p>
+              </div>
+              <div class="mt-10 flex justify-center">
+                <img src="assets/img/mu33.jpeg" alt="">
+              </div>
+              <div class=" mt-14">
+                <p class="text-[#1877eb] text-3xl font-bold">Features</p>
+                <div class="flex space-x-5 mt-3">
+                  <div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Separate Chamber for meter and CT</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Plug and play communication module</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">High accuracy class</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Maximum demand</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Outdoor usage</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Sealable and lockable</p>
+                    </div>
+                    <div class="space-x-2 flex">
+                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
+                      <p class="text-">Anti-tamper</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METER</p>
+                <div class="flex space-x-5 mt-3">
+                  <div>
+                    <p class="text-xl font-bold pb-3">DESCRIPTION</p>
+                    <p>Accuracy</p>
+                    <p>Rated Voltage</p>
+                    <p>Operation voltage range</p>
+                    <p>Current</p>
+                    <p>Power consumption</p>
+                    <p>Protection class</p>
+                    <p>RTC</p>
+                  </div>
+                  <div>
+                    <p class="text-xl font-bold pb-3">PARAMETER</p>
+                    <p>Active class 0.5s, reactive class 2.0</p>
+                    <p>3x230/400V.3X240/415V</p>
+                    <p>0.7Un-1.2ur</p>
+                    <p>200-800/5A</p>
+                    <p>Voltage circuit (Un): 2W/5VA</p>
+                    <p>Current circuit (in): 0.5VA</p>
+                    <p>IP54</p>
+                    <p>is/day (in 23℃)</p>
+                  </div>
+                </div>
+                <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METERING UNIT</p>
+                <div class="flex space-x-5">
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">200A metering unit</p>
+                    <div class="flex space-x-8 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Box dimension</p>
+                        <p>Weight</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>200/5</p>
+                        <p>850mmx240mmx160mm</p>
+                        <p>Approx. 14kg</p>
+                        <p>Stainless steel 201, cold steel</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">500A metering unit</p>
+                    <div class="flex space-x-5 mt-3 ">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Box dimension</p>
+                        <p>Weight</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>500/5</p>
+                        <p>850mmx240mmx180mm </p>
+                        <p>Approx. 18kg</p>
+                        <p>Stainless steel 201, cold steel</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex space-x-5 mt-8">
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">300A metering unit </p>
+                    <div class="flex space-x-8 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Box dimension</p>
+                        <p>Weight</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>300/5</p>
+                        <p>850mmx240mmx160mm</p>
+                        <p>Approx. 15kg</p>
+                        <p>Stainless steel 201</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <p class="text-xl font-bold mt-3">800A metering unit</p>
+                    <div class="flex space-x-5 mt-3">
+                      <div>
+                        <p>CT ratio</p>
+                        <p>Box dimension</p>
+                        <p>Weight</p>
+                        <p>Box material</p>
+                        <p>IP protection class</p>
+                      </div>
+                      <div>
+                        <p>800/5</p>
+                        <p>1000mmx800mmx250mm </p>
+                        <p>Approx. 57kg</p>
+                        <p>Stainless steel 201</p>
+                        <p>54</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </mat-tab>
+      <mat-tab label="Single Phase Meter Enclosure">
+        <div class="mt-10">
+          <p class="text-4xl font-bold  text-[#1877eb]">Single Phase Meter Enclosure <span class="text-lg">ME13</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">ME13 Single phase meter enclosure is specially designed for
+                  the purpose of anti-tamper and protection of meter. One DIN
+                  rail type meter and one 2P MCB can be mounted with bottom
+                  connection. The material of enclosure is polycarbonate with
+                  UV resistance and V0 frame resistance degree. Pole mounted
+                  or wall mounted or lock and key protection are based on
+                  project demand. Alarm sensor for enclosure opening is
+                  reserved function.</p>
+              </div>
+              <div class="mt-10">
+                <img src="assets/img/singl1.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl font-bold">SPECIFICATIONS </p>
+                <table class="mt-4">
+                  <tr class="border">
+                    <th>Items</th>
+                    <th>Parameters</th>
+                  </tr>
+                  <tr>
+                    <td>Dimension</td>
+                    <td>L255mm*W175mm*H118mm</td>
+                  </tr>
+                  <tr>
+                    <td>Material of top cover</td>
+                    <td>PC+10%GF non- transparent/PC transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Material of base</td>
+                    <td>PC+10%GF non- transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Protection degree</td>
+                    <td>IP54, IK10</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-UV</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Flame resistance degree</td>
+                    <td>v0</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-tamper protection</td>
+                    <td>Seal and padlock for cover</td>
+                  </tr>
+                  <tr>
+                    <td>Method of production</td>
+                    <td>Injection</td>
+                  </tr>
+                  <tr>
+                    <td>Temperature</td>
+                    <td>-30℃ to 80℃</td>
+                  </tr>
+                  <tr>
+                    <td>Heat dissipation </td>
+                    <td>No Ventilation hole for cooling</td>
+                  </tr>
+                  <tr>
+                    <td>Installation provision for MCB</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Mounting methods </td>
+                    <td>Pole mounted by stainless steel strap or wall
+                      mounted by screw</td>
+                  </tr>
+                  <tr>
+                    <td>Thickness</td>
+                    <td>Top cover 2mm, base 2mm</td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-2 mt-4">
+
+        <div class="mt-10">
+          <p class="text-4xl font-bold  text-[#1877eb]">Single Phase Meter Enclosure <span class="text-lg">ME14</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">ME14 Single phase meter enclosure is specially designed for
+                  the purpose of anti-tamper and protection of meter. One BS
+                  type meter can be mounted with bottom connection. The
+                  enclosure is with transparent window, transparent/nontransparent top cover and non-transparent base.
+                  The material
+                  of enclosure is polycarbonate with UV resistance and V0
+                  frame resistance degree. Pole mounted or wall mounted or
+                  lock and key protection are based on project demand. Alarm
+                  sensor for enclosure opening is reserved function.</p>
+              </div>
+              <div class="mt-10 flex justify-center">
+                <img src="assets/img/single2.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl font-bold">SPECIFICATIONS </p>
+                <table class="mt-4">
+                  <tr class="border">
+                    <th>Items</th>
+                    <th>Parameters</th>
+                  </tr>
+                  <tr>
+                    <td>Dimension</td>
+                    <td>L219mm*W167.5mm*H93.3mm</td>
+                  </tr>
+                  <tr>
+                    <td>Material of top cover</td>
+                    <td>PC+10%GF non- transparent/PC transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Material of base</td>
+                    <td>PC+10%GF non- transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Protection degree</td>
+                    <td>IP54, IK10</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-UV</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Flame resistance degree</td>
+                    <td>v0</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-tamper protection</td>
+                    <td>Seal and padlock for cover</td>
+                  </tr>
+                  <tr>
+                    <td>Method of production</td>
+                    <td>Injection</td>
+                  </tr>
+                  <tr>
+                    <td>Temperature</td>
+                    <td>-30℃ to 80℃</td>
+                  </tr>
+                  <tr>
+                    <td>Heat dissipation </td>
+                    <td>No Ventilation hole for cooling</td>
+                  </tr>
+                  <tr>
+                    <td>Installation provision for MCB</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Mounting methods </td>
+                    <td>Pole mounted by stainless steel strap or wall
+                      mounted by screw</td>
+                  </tr>
+                  <tr>
+                    <td>Thickness</td>
+                    <td>Top cover 2mm, base 2mm</td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-2 mt-4">
+
+        <div class="mt-10">
+          <p class="text-4xl font-bold  text-[#1877eb]">Single Phase Meter Enclosure <span class="text-lg">ME15</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">ME15 Single phase meter enclosure is specially designed
+                  for the purpose of anti-tamper and protection of meter. One
+                  BS type meter and one 2P MCB can be mounted with
+                  bottom connection. The enclosure is with transparent
+                  window, transparent/non- transparent top cover and nontransparent base. The material of enclosure is
+                  polycarbonate with UV resistance and V0 frame resistance
+                  degree. Pole mounted or wall mounted or lock and key
+                  protection are based on project demand. Alarm sensor for
+                  enclosure opening is reserved function.</p>
+              </div>
+              <div class="mt-10 flex justify-center">
+                <img src="assets/img/single3.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl font-bold">SPECIFICATIONS </p>
+                <table class="mt-4">
+                  <tr class="border">
+                    <th>Items</th>
+                    <th>Parameters</th>
+                  </tr>
+                  <tr>
+                    <td>Dimension</td>
+                    <td>L380mm*W175mm*H106mm</td>
+                  </tr>
+                  <tr>
+                    <td>Material of top cover</td>
+                    <td>PC+10%GF non- transparent/PC transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Material of turnover window</td>
+                    <td>PC transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Material of base</td>
+                    <td>PC+10%GF non- transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Protection degree</td>
+                    <td>IP54, IK10</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-UV</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Flame resistance degree</td>
+                    <td>v0</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-tamper protection</td>
+                    <td>Seal and padlock for cover and seal for
+                      windows
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Method of production</td>
+                    <td>Injection</td>
+                  </tr>
+                  <tr>
+                    <td>Temperature</td>
+                    <td>-30℃ to 80℃</td>
+                  </tr>
+                  <tr>
+                    <td>Heat dissipation </td>
+                    <td>No Ventilation hole for cooling</td>
+                  </tr>
+                  <tr>
+                    <td>Installation provision for MCB</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Mounting methods </td>
+                    <td>Pole mounted by stainless steel strap or wall
+                      mounted by screw</td>
+                  </tr>
+                  <tr>
+                    <td>Thickness</td>
+                    <td>Top cover 2mm, base 2mm, window 1.9mm</td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-2 mt-4">
+
+        <div class="mt-10">
+          <p class="text-4xl font-bold  text-[#1877eb]">Single Phase Meter Enclosure(B2) <span
+              class="text-lg">ME11</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">Single phase meter enclosure is specially designed for the
+                  purpose of anti-tamper and protection of meter. One BS type
+                  meter can be mounted with bottom connection. The enclosure
+                  with two separated transparent windows, nontransparent/transparent top cover and non-transparent base.
+                  The material of enclosure is polycarbonate with UV resistance
+                  and V0 frame resistance degree. Pole mounted or wall mounted
+                  or lock and key protection are based on project demand. Alarm
+                  sensor for enclosure opening is reserved function.</p>
+              </div>
+              <div class="mt-10 flex justify-center">
+                <img src="assets/img/single4.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl font-bold">SPECIFICATIONS </p>
+                <table class="mt-4">
+                  <tr class="border">
+                    <th>Items</th>
+                    <th>Parameters</th>
+                  </tr>
+                  <tr>
+                    <td>Dimension</td>
+                    <td>L374.6mm*W194.3mm*H123.30mm</td>
+                  </tr>
+                  <tr>
+                    <td>Material of top cover</td>
+                    <td>PC+10%GF non-transparent/ PC transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Material of turnover window</td>
+                    <td>PC transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Material of base</td>
+                    <td>PC+10%GF non- transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Protection degree</td>
+                    <td>IP55, IK10</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-UV</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Flame resistance degree</td>
+                    <td>v0</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-tamper protection</td>
+                    <td>Seal and padlock for cover and seal for
+                      windows</td>
+                  </tr>
+                  <tr>
+                    <td>Method of production</td>
+                    <td>Injection</td>
+                  </tr>
+                  <tr>
+                    <td>Temperature</td>
+                    <td>-30℃ to 80℃</td>
+                  </tr>
+                  <tr>
+                    <td>Installation provision for MCB</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Mounting methods </td>
+                    <td>Pole mounted by stainless steel strap or wall
+                      mounted by screw</td>
+                  </tr>
+                  <tr>
+                    <td>Thickness</td>
+                    <td>Top cover 2mm, Base 2mm, Windows 2.2mm</td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Three Phase Meter Enclosure">
+        <div class="mt-10">
+          <p class="text-4xl font-bold  text-[#1877eb]">Three Phase Meter Enclosure <span class="text-lg">ME32</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">ME32 Three phase meter enclosure is specially designed for
+                  the purpose of anti-tamper and protection of meter. One three
+                  phase BS type meter and one 4P MCB can be mounted with
+                  bottom connection. The enclosure is with transparent window,
+                  transparent/non-transparent top cover and non-transparent
+                  base. The material of enclosure is polycarbonate with UV
+                  resistance and V0 frame resistance degree. Pole mounted or
+                  Wall mounted or lock and key protection are based on project
+                  demand. Alarm sensor for enclosure opening is reserved
+                  function.</p>
+              </div>
+              <div class="mt-10 flex justify-center">
+                <img src="assets/img/three.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl font-bold">SPECIFICATIONS </p>
+                <table class="mt-4">
+                  <tr class="border">
+                    <th>Items</th>
+                    <th>Parameters</th>
+                  </tr>
+                  <tr>
+                    <td>Dimension</td>
+                    <td>L460mm*W235.2mm*H116mm</td>
+                  </tr>
+                  <tr>
+                    <td>Material of top cover</td>
+                    <td>PC+10%GF non-transparent/ PC transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Material of turnover window</td>
+                    <td>PC transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Material of base</td>
+                    <td>PC+10%GF non- transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Protection degree</td>
+                    <td>IP54, IK10</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-UV</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Flame resistance degree</td>
+                    <td>v0</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-tamper protection</td>
+                    <td>Seal and padlock for cover and seal for
+                      windows
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Method of production</td>
+                    <td>Injection</td>
+                  </tr>
+                  <tr>
+                    <td>Temperature</td>
+                    <td>-30℃ to 80℃</td>
+                  </tr>
+                  <tr>
+                    <td>Heat dissipation </td>
+                    <td>No Ventilation hole for cooling</td>
+                  </tr>
+                  <tr>
+                    <td>Installation provision for MCB</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Mounting methods </td>
+                    <td>Pole mounted by stainless steel strap or wall
+                      mounted by screw</td>
+                  </tr>
+                  <tr>
+                    <td>Thickness</td>
+                    <td>Top cover 2.5mm, base 2.5mm, window 1.9mm</td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-2 mt-4">
+
+        <div class="mt-10">
+          <p class="text-4xl font-bold  text-[#1877eb]">Three Phase Meter Enclosure <span class="text-lg">ME33</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">ME33 three phase meter enclosure is specially designed for
+                  the purpose of anti-tamper and protection of meter. 1(One)
+                  pcs BS type meter or Maximum 4(Four) pcs DIN rail type
+                  meters can be mounted with bottom connection. The
+                  enclosure with transparent/non-transparent top cover and
+                  non-transparent base. The material of enclosure is
+                  polycarbonate with UV resistance and V0 frame resistance
+                  degree. Pole mounted or wall mounted or lock and key
+                  protection are based on project demand. Alarm sensor for
+                  enclosure opening is reserved function.</p>
+              </div>
+              <div class="mt-10 flex justify-center">
+                <img src="assets/img/three2.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl font-bold">SPECIFICATIONS </p>
+                <table class="mt-4">
+                  <tr class="border">
+                    <th>Items</th>
+                    <th>Parameters</th>
+                  </tr>
+                  <tr>
+                    <td>Dimension</td>
+                    <td>L519.1mm*W298.7mm*H133mm</td>
+                  </tr>
+                  <tr>
+                    <td>Material of top cover</td>
+                    <td>PC+10%GF non-transparent/ PC transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Material of base</td>
+                    <td>PC+10%GF non- transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Protection degree</td>
+                    <td>IP55, IK10</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-UV</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Flame resistance degree</td>
+                    <td>v0</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-tamper protection</td>
+                    <td>Seal and padlock for cover and seal for
+                      windows
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Method of production</td>
+                    <td>Injection</td>
+                  </tr>
+                  <tr>
+                    <td>Temperature</td>
+                    <td>-30℃ to 80℃</td>
+                  </tr>
+                  <tr>
+                    <td>Heat dissipation </td>
+                    <td>No Ventilation hole for cooling</td>
+                  </tr>
+                  <tr>
+                    <td>Installation provision for MCB</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Mounting methods </td>
+                    <td>Pole mounted by stainless steel strap or wall
+                      mounted by screw</td>
+                  </tr>
+                  <tr>
+                    <td>Thickness</td>
+                    <td>Top cover 2.5mm, base 2.5mm, window 1.9mm</td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-2 mt-4">
+
+        <div class="mt-10">
+          <p class="text-4xl font-bold  text-[#1877eb]">Three Phase Meter Enclosure <span class="text-lg">ME32</span>
+          </p>
+          <div class="flex flex-row space-x-16 justify-around">
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[16px] pt-6">ME31 three phase meter enclosure is specially designed for
+                  the purpose of anti-tamper and protection of meter. 1(One)
+                  pcs BS type meter or maximum 4(Four) pcs DIN rail type
+                  meters can be mounted with bottom connection. The
+                  enclosure with two separated transparent windows,
+                  transparent /non-transparent top cover and non-transparent
+                  base. The material of enclosure is polycarbonate with UV
+                  resistance and V0 frame resistance degree. Pole mounted
+                  or wall mounted or lock and key protection are based on
+                  project demand. Alarm sensor for enclosure opening is
+                  reserved function.</p>
+              </div>
+              <div class="mt-10 flex justify-center">
+                <img src="assets/img/three3.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="w-full md:w-[50%]">
+              <div>
+                <p class="text-[#1877eb] text-3xl font-bold">SPECIFICATIONS </p>
+                <table class="mt-4">
+                  <tr class="border">
+                    <th>Items</th>
+                    <th>Parameters</th>
+                  </tr>
+                  <tr>
+                    <td>Dimension</td>
+                    <td>L519.1mm*W298.7mm*H133mm</td>
+                  </tr>
+                  <tr>
+                    <td>Material of top cover</td>
+                    <td>PC+10%GF non-transparent/ PC transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Material of base</td>
+                    <td>PC+10%GF non- transparent</td>
+                  </tr>
+                  <tr>
+                    <td>Protection degree</td>
+                    <td>IP55, IK10</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-UV</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Flame resistance degree</td>
+                    <td>v0</td>
+                  </tr>
+                  <tr>
+                    <td>Anti-tamper protection</td>
+                    <td>Seal and padlock for cover and seal for
+                      windows
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Method of production</td>
+                    <td>Injection</td>
+                  </tr>
+                  <tr>
+                    <td>Temperature</td>
+                    <td>-30℃ to 80℃</td>
+                  </tr>
+                  <tr>
+                    <td>Heat dissipation </td>
+                    <td>No Ventilation hole for cooling</td>
+                  </tr>
+                  <tr>
+                    <td>Installation provision for MCB</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Mounting methods </td>
+                    <td>Pole mounted by stainless steel strap or wall
+                      mounted by screw</td>
+                  </tr>
+                  <tr>
+                    <td>Thickness</td>
+                    <td>Top cover 2.5mm, base 2.5mm, window 1.9mm</td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-2 mt-4">
+      </mat-tab>
+    </mat-tab-group>
+
+  </div>
+
+</section>
+
+<footer class="w-full h-[50vh] bg-slate-900 pt-16">
+  <div class="container mx-auto">
+    <div class="flex  ">
+      <div class="w-2/3">
+        <p class="text-[#1877eb] text-2xl">TETRAELECTRIC SOLUTIONS LTD</p>
+        <p class="text-white pt-4">provides premium goods that adhere to all international requirements. Our team
+          members are
+          manufacturing
+          professionals who can provide OEM and ODM services in accordance with your unique needs.
+        </p>
+      </div>
+      <div class="text-white w-2/3 pl-10">
+        <p class="text-[#1877eb] text-2xl">Contact us</p>
+        <div class="flex space-x-3 pt-4 ">
+          <i class="fa fa-phone pt-1 text-[#1877eb]"></i>
+          <p href="">Phone: +234 803 407 3880</p>
+        </div>
+        <div class="flex space-x-3 pt-4 ">
+          <i class="fa fa-envelope pt-1 text-[#1877eb]"></i>
+          <p>Email： sales@tetraesolutions.com</p>
+        </div>
+
+      </div>
+      <div class="text-white w-2/3">
+        <p class="text-[#1877eb] text-2xl">Our Company</p>
+        <p>Home</p>
+        <p>About</p>
+        <p>Products</p>
+        <p>Contact us</p>
+      </div>
+    </div>
+    <div class="pt-14">
+      <hr class=" border-gray-500  border ">
+    </div>
+    <div class="container mx-auto text-center text-white mt-7"> TETRAELECTRIC SOLUTIONS LTD. &copy; {{ year }} </div>
+  </div>
+</footer>

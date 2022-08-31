@@ -2,7 +2,7 @@
   @apply hover:bg-[#1877eb]  py-2 px-3  hover:text-white cursor-pointer ;
 }
 .active{
-  @apply bg-[#1877eb] py-2 px-3 text-white;
+  @apply bg-[#1877eb] py-2 px-3 rounded text-white;
 }
 
 .sticky-nav{

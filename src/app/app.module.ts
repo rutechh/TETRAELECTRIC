@@ -10,6 +10,7 @@ import { ServiceComponent } from './service/service.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgImageSliderModule } from 'ng-image-slider';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
       HomeComponent,
       AboutComponent,
       ContactComponent,
-      ServiceComponent
+      ServiceComponent,
    ],
   imports: [
     BrowserModule,
@@ -26,6 +27,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
     CarouselModule,
     BrowserAnimationsModule,
     NgImageSliderModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
