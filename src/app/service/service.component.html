@@ -22,18 +22,30 @@
       </div>
     </div>
   </header>
-  <nav class="w-full shadow sticky-nav z-50 mt-12" style="background-color: rgb(255, 255, 255);">
-    <div class="container mx-auto ">
+  <nav class="w-full shadow sticky-nav z-50 mt-0 md:mt-10" style="background-color: rgb(255, 255, 255);">
+    <div class="container mx-auto hidden md:block">
       <div class="flex flex-row justify-between">
         <a [routerLink]="['/home']"><img src="assets/img/logo.png" alt="" class="w-24"></a>
         <div class="">
           <ul class="nav-menu hidden md:inline-flex space-x-6 text-lg font-bold mt-5 text-[#1877eb]">
             <li routerLinkActive="active" [routerLink]="['/home']" class="nav"><a>Home</a></li>
-            <li routerLinkActive="active" [routerLink]="['/home']" class="nav"><a>About Us</a></li>
-            <li routerLinkActive="active" [routerLink]="['/service']" class="nav"><a>Products</a></li>
-            <li routerLinkActive="active" [routerLink]="['/home']" class="nav"><a>Contact Us</a></li>
           </ul>
         </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto block md:hidden">
+      <div class="flex flex-row justify-between">
+        <a [routerLink]="['/home']"><img src="assets/img/logo.png" alt="" class="w-24"></a>
+        <div class="p-4">
+          <i class="fa fa-bars fa text-[#1877eb] text-3xl cursor-pointer" (click)="toggleNav()" *ngIf="showMenu"></i>
+          <i class="fa fa-times text-[#1877eb] text-3xl cursor-pointer" (click)="toggleNav()" *ngIf="!showMenu"></i>
+        </div>
+      </div>
+      <div *ngIf="!showMenu">
+        <ul class="nav-menu p-4 text-lg font-bold text-[#1877eb]">
+          <li [routerLink]="['/home']"><a>Home</a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -55,7 +67,8 @@
 <section class="my-20 container mx-auto">
   <div>
     <p class="text-[40px] font-bold text-center">Our Products</p>
-    <p class="mx-auto w-3/5 text-center text-[16px] pt-6">Our 5 major product offerings lie along the end-to-end value
+    <p class="mx-auto w-full md:w-3/5 text-center text-[16px] pt-6">Our 5 major product offerings lie along the
+      end-to-end value
       chain of a deal execution pipeline, from Deal Sourcing, to Financing and Trade Logistics.</p>
   </div>
 
@@ -65,7 +78,7 @@
         <div class="mt-10">
           <p class="text-4xl font-bold  text-[#1877eb]">11KV Metering Panel <span class="text-lg">MP11</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">MP11 Series metering Panel is specially designed for the
@@ -82,7 +95,7 @@
                   protection. It is suitable to be used for commercial and
                   industrial projects.</p>
               </div>
-              <div class="mt-10 flex space-x-5">
+              <div class="mt-10 flex flex-col md:flex-row space-x-0 md:space-x-5">
                 <img src="assets/img/panel2.jpeg" alt="">
                 <img src="assets/img/panel22.jpeg" alt="">
               </div>
@@ -148,7 +161,7 @@
                   </div>
                 </div>
                 <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METERING PANEL</p>
-                <div class="flex space-x-5">
+                <div class="flex flex-col md:flex-row space-x-0 md:space-x-5">
                   <div class="">
                     <p class="text-xl font-bold mt-3">20/1A metering unit</p>
                     <div class="flex space-x-8 mt-3">
@@ -199,7 +212,7 @@
           <p class="text-4xl font-bold text-[#1877eb]">Three Phase LV CT Prepayment Metering Unit <span
               class="text-lg">MU32</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0  md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">MU32 Series metering unit is specially designed for the
@@ -284,7 +297,7 @@
                   </div>
                 </div>
                 <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METER UNIT</p>
-                <div class="flex space-x-5">
+                <div class="flex flex-col md:flex-row space-x-0 md:space-x-5">
                   <div class="">
                     <p class="text-xl font-bold mt-3">200A metering unit</p>
                     <div class="flex space-x-8 mt-3">
@@ -325,7 +338,7 @@
                   </div>
                 </div>
 
-                <div class="flex space-x-5 mt-8">
+                <div class="flex flex-col md:flex-row space-x-0 md:space-x-5 mt-8">
                   <div class="">
                     <p class="text-xl font-bold mt-3">300A metering unit </p>
                     <div class="flex space-x-8 mt-3">
@@ -375,7 +388,7 @@
         <div class="mt-10">
           <p class="text-4xl font-bold text-[#1877eb]">33KV Metering Panel <span class="text-lg">MP31</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">MP31 Series metering Panel is specially designed for the
@@ -391,7 +404,7 @@
                   Distribution company to reduce energy loss and revenue
                   protection. </p>
               </div>
-              <div class="mt-10 flex space-x-5">
+              <div class="mt-10 flex flex-col md:flex-row space-x-0 md:space-x-5">
                 <img src="assets/img/panel44.jpeg" alt="">
                 <img src="assets/img/panel444.jpeg" alt="">
               </div>
@@ -421,10 +434,7 @@
                       <i class="fa fa-check text-[#1877eb] pt-1"></i>
                       <p class="text-">Outdoor usage</p>
                     </div>
-                    <div class="space-x-2 flex">
-                      <i class="fa fa-check text-[#1877eb] pt-1"></i>
-                      <p class="text-">Outdoor usage</p>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -457,7 +467,7 @@
                   </div>
                 </div>
                 <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METERING PANEL</p>
-                <div class="flex space-x-5">
+                <div class="flex flex-col md:flex-row space-x-0 md:space-x-5">
                   <div class="">
                     <p class="text-xl font-bold mt-3">20/1A metering unit</p>
                     <div class="flex space-x-8 mt-3">
@@ -528,7 +538,7 @@
         <div class="mt-10">
           <p class="text-4xl font-bold  text-[#1877eb]">Low Voltage Distribution Panel <span class="text-lg">DP31</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">DP31 series Low voltage distribution panel is specially
@@ -542,7 +552,7 @@
                   meter for whole power consumption measure. This series
                   product are widely used in city, village etc.</p>
               </div>
-              <div class="mt-10 flex space-x-5">
+              <div class="mt-10 flex flex-col md:flex-row space-x-0 md:space-x-5">
                 <img src="assets/img/panel5.jpeg" alt="">
                 <img src="assets/img/panel55.jpeg" alt="">
               </div>
@@ -551,34 +561,53 @@
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS </p>
-                <div class="flex space-x-5 mt-3">
-                  <div>
-                    <p class="text-xl font-bold pb-3">DESCRIPTION</p>
-                    <p>Dimension</p>
-                    <p>Protection degree</p>
-                    <p>Material of enclosure</p>
-                    <p>Incoming MCCB</p>
-                    <p>Outgoing MCCB</p>
-                    <p>Quantity of Door</p>
-                    <p>Installation</p>
-                    <p>Color</p>
-                    <p>Earth Protection</p>
-                    <p>Metering </p>
-                  </div>
-                  <div class="whitespace-nowrap">
-                    <p class="text-xl font-bold pb-3">PARAMETER</p>
-                    <p>L1450mm*W400mm*H1100mm or customized</p>
-                    <p>IP54</p>
-                    <p>Stainless steel 201; Powder Coating Shade；or customized</p>
-                    <p>250A or customized</p>
-                    <p>5pcs 140A or customized</p>
-                    <p>2 for power distribution chamber and 1 for street lighting chamber</p>
-                    <p>Lifting hook or ground support</p>
-                    <p>RAL 7002 Olive or customized</p>
-                    <p>Equipped</p>
-                    <p>Customized, Energy meter and CT</p>
-                  </div>
-                </div>
+                <table>
+                  <tr>
+                    <th>DESCRIPTION</th>
+                    <th>PARAMETER</th>
+                  </tr>
+                  <tr>
+                    <td>Dimension</td>
+                    <td>L1450mm*W400mm*H1100mm or customized</td>
+                  </tr>
+                  <tr>
+                    <td>Protection degree</td>
+                    <td>IP54</td>
+                  </tr>
+                  <tr>
+                    <td>Material of enclosure</td>
+                    <td>Stainless steel 201; Powder Coating Shade；or customized</td>
+                  </tr>
+                  <tr>
+                    <td>Incoming MCCB</td>
+                    <td>250A or customized</td>
+                  </tr>
+                  <tr>
+                    <td>Outgoing MCCB</td>
+                    <td>5pcs 140A or customized</td>
+                  </tr>
+                  <tr>
+                    <td>Quantity of Door</td>
+                    <td>2 for power distribution chamber and 1 for street lighting chamber</td>
+                  </tr>
+                  <tr>
+                    <td>Installation</td>
+                    <td>Lifting hook or ground support</td>
+                  </tr>
+                  <tr>
+                    <td>Color</td>
+                    <td>RAL 7002 Olive or customized</td>
+                  </tr>
+                  <tr>
+                    <td>Earth Protection</td>
+                    <td>Equipped</td>
+                  </tr>
+                  <tr>
+                    <td>Metering</td>
+                    <td>Customized, Energy meter and CT</td>
+                  </tr>
+                </table>
+
               </div>
             </div>
           </div>
@@ -589,7 +618,7 @@
           <p class="text-4xl font-bold text-[#1877eb]">Three Phase LV CT Postpaid Metering Unit <span
               class="text-lg">MU33</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row  space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">MU33 Series metering unit is specially designed
@@ -673,7 +702,7 @@
                   </div>
                 </div>
                 <p class="text-[#1877eb] text-3xl pt-8 font-bold">SPECIFICATIONS ON METERING UNIT</p>
-                <div class="flex space-x-5">
+                <div class="flex flex-col md:flex-row space-x-0 md:space-x-5">
                   <div class="">
                     <p class="text-xl font-bold mt-3">200A metering unit</p>
                     <div class="flex space-x-8 mt-3">
@@ -714,7 +743,7 @@
                   </div>
                 </div>
 
-                <div class="flex space-x-5 mt-8">
+                <div class="flex flex-col md:flex-row space-x-0 md:space-x-5 mt-8">
                   <div class="">
                     <p class="text-xl font-bold mt-3">300A metering unit </p>
                     <div class="flex space-x-8 mt-3">
@@ -761,11 +790,11 @@
         </div>
 
       </mat-tab>
-      <mat-tab label="Single Phase Meter Enclosure">
+      <mat-tab label="Single Phase Enclosure">
         <div class="mt-10">
           <p class="text-4xl font-bold  text-[#1877eb]">Single Phase Meter Enclosure <span class="text-lg">ME13</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">ME13 Single phase meter enclosure is specially designed for
@@ -849,12 +878,11 @@
             </div>
           </div>
         </div>
-        <hr class="border-2 mt-4">
 
         <div class="mt-10">
           <p class="text-4xl font-bold  text-[#1877eb]">Single Phase Meter Enclosure <span class="text-lg">ME14</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">ME14 Single phase meter enclosure is specially designed for
@@ -939,12 +967,11 @@
             </div>
           </div>
         </div>
-        <hr class="border-2 mt-4">
 
         <div class="mt-10">
           <p class="text-4xl font-bold  text-[#1877eb]">Single Phase Meter Enclosure <span class="text-lg">ME15</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">ME15 Single phase meter enclosure is specially designed
@@ -1035,13 +1062,12 @@
             </div>
           </div>
         </div>
-        <hr class="border-2 mt-4">
 
         <div class="mt-10">
           <p class="text-4xl font-bold  text-[#1877eb]">Single Phase Meter Enclosure(B2) <span
               class="text-lg">ME11</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">Single phase meter enclosure is specially designed for the
@@ -1127,11 +1153,11 @@
           </div>
         </div>
       </mat-tab>
-      <mat-tab label="Three Phase Meter Enclosure">
+      <mat-tab label="Three Phase Enclosure">
         <div class="mt-10">
           <p class="text-4xl font-bold  text-[#1877eb]">Three Phase Meter Enclosure <span class="text-lg">ME32</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">ME32 Three phase meter enclosure is specially designed for
@@ -1223,12 +1249,11 @@
             </div>
           </div>
         </div>
-        <hr class="border-2 mt-4">
 
         <div class="mt-10">
           <p class="text-4xl font-bold  text-[#1877eb]">Three Phase Meter Enclosure <span class="text-lg">ME33</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">ME33 three phase meter enclosure is specially designed for
@@ -1316,12 +1341,11 @@
             </div>
           </div>
         </div>
-        <hr class="border-2 mt-4">
 
         <div class="mt-10">
           <p class="text-4xl font-bold  text-[#1877eb]">Three Phase Meter Enclosure <span class="text-lg">ME32</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">ME31 three phase meter enclosure is specially designed for
@@ -1414,13 +1438,12 @@
             </div>
           </div>
         </div>
-        <hr class="border-2 mt-4">
 
         <div class="mt-10">
           <p class="text-4xl font-bold  text-[#1877eb]">Three Phase Meter Enclosure(A2) <span
               class="text-lg">ME34</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">three phase meter enclosure is specially designed for the
@@ -1513,12 +1536,11 @@
             </div>
           </div>
         </div>
-        <hr class="border-2 mt-4">
 
         <div class="mt-10">
           <p class="text-4xl font-bold  text-[#1877eb]">Multi-function Distribution Box<span class="text-lg">DB11</span>
           </p>
-          <div class="flex flex-row space-x-16 justify-around">
+          <div class="flex flex-col md:flex-row space-x-0 md:space-x-16 justify-around">
             <div class="w-full md:w-[50%]">
               <div>
                 <p class="text-[16px] pt-6">DB11 Multi-function Distribution box is specially designed for
@@ -1611,10 +1633,10 @@
 
 </section>
 
-<footer class="w-full h-[50vh] bg-slate-900 pt-16">
+<footer class="w-full h-auto bg-slate-900 pt-16">
   <div class="container mx-auto">
-    <div class="flex  ">
-      <div class="w-2/3">
+    <div class="flex flex-col md:flex-row  ">
+      <div class="w-full md:w-2/3">
         <p class="text-[#1877eb] text-2xl">TETRAELECTRIC SOLUTIONS LTD</p>
         <p class="text-white pt-4">provides premium goods that adhere to all international requirements. Our team
           members are
@@ -1622,19 +1644,19 @@
           professionals who can provide OEM and ODM services in accordance with your unique needs.
         </p>
       </div>
-      <div class="text-white w-2/3 pl-10">
-        <p class="text-[#1877eb] text-2xl">Contact us</p>
+      <div class="text-white w-full pt-6 md:pt-0 md:w-2/3 pl-0 md:pl-10">
+        <p class="text-[#1877eb] text-2xl text-center md:text-left">Contact us</p>
         <div class="flex space-x-3 pt-4 ">
           <i class="fa fa-phone pt-1 text-[#1877eb]"></i>
           <p href="">Phone: +234 803 407 3880</p>
         </div>
         <div class="flex space-x-3 pt-4 ">
           <i class="fa fa-envelope pt-1 text-[#1877eb]"></i>
-          <p>Email： sales@tetraesolutions.com</p>
+          <p class="whitespace-nowrap">Email： sales@tetraesolutions.com</p>
         </div>
 
       </div>
-      <div class="text-white w-2/3">
+      <div class="text-white w-2/3 hidden md:block">
         <p class="text-[#1877eb] text-2xl">Our Company</p>
         <p>Home</p>
         <p>About</p>

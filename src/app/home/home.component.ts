@@ -10,11 +10,18 @@ import { NgImageSliderComponent } from 'ng-image-slider';
 })
 export class HomeComponent implements OnInit {
   year: number = new Date().getFullYear();
+  showMenu: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
   }
+  toggleNav(){
+    this.showMenu = !this.showMenu;
+  }
+
+
+
   customOptions: OwlOptions = {
     loop: true,
     autoplay: true,

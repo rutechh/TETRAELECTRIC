@@ -1,4 +1,4 @@
-<header class="w-full absolute top-0 z-50" #home>
+<header class="w-full absolute top-0 z-50">
   <div class="bg-slate-300 p-3 hidden md:block shadow">
     <div class="container mx-auto ">
       <div class="flex flex-row justify-between">
@@ -21,18 +21,37 @@
   </div>
 </header>
 
-<nav class="w-full shadow sticky-nav z-50 mt-14" style="background-color: rgb(255, 255, 255);">
-  <div class="container mx-auto ">
+<nav class="w-full shadow sticky-nav z-50 mt-0 md:mt-14" style="background-color: rgb(255, 255, 255);">
+  <div class="container mx-auto hidden md:block">
     <div class="flex flex-row justify-between">
       <a [routerLink]="['/home']"><img src="assets/img/logo.png" alt="" class="w-24"></a>
       <div class="">
         <ul class="nav-menu hidden md:inline-flex space-x-6 text-lg font-bold mt-5 text-[#1877eb]">
           <li routerLinkActive="active" [routerLink]="['/home']" class="nav"><a>Home</a></li>
           <li routerLinkActive="active" (click)="scroll(about)" class="nav"><a>About Us</a></li>
-          <li routerLinkActive="active" [routerLink]="['/service']" class="nav"><a>Products</a></li>
           <li routerLinkActive="active" (click)="scroll(Contact)" class="nav"><a>Contact Us</a></li>
+          <li routerLinkActive="active" [routerLink]="['/service']" class="nav"><a>Products</a></li>
+
         </ul>
       </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto block md:hidden">
+    <div class="flex flex-row justify-between">
+      <a [routerLink]="['/home']"><img src="assets/img/logo.png" alt="" class="w-24"></a>
+      <div class="p-4">
+        <i class="fa fa-bars fa text-[#1877eb] text-3xl cursor-pointer" (click)="toggleNav()" *ngIf="showMenu"></i>
+        <i class="fa fa-times text-[#1877eb] text-3xl cursor-pointer" (click)="toggleNav()" *ngIf="!showMenu"></i>
+      </div>
+    </div>
+    <div *ngIf="!showMenu">
+      <ul class="nav-menu p-4 text-lg font-bold text-[#1877eb]">
+        <li [routerLink]="['/home']"><a>Home</a></li>
+        <li (click)="scroll(about)"><a>About Us</a></li>
+        <li [routerLink]="['/service']"><a>Products</a></li>
+        <li (click)="scroll(Contact)"><a>Contact Us</a></li>
+      </ul>
     </div>
   </div>
 </nav>
@@ -43,15 +62,15 @@
 
   <div class="bg-black/60 w-full relative top-0 z-10 " style="height: 80vh;">
     <div class="text-white container w-full mx-auto">
-      <div class="pt-10 w-1/3">
-        <div class="py-6 rounded-xl">
+      <div class="pt-10 w-full md:w-1/3">
+        <div class="py-6 rounded-xl text-center md:text-left">
           <h3 class="font-bold">One Stop Electrical Switchgear Solutions</h3>
           <h2 class="text-[3rem] font-bold ">Tetraelectric</h2>
           <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora excepturi ut vero
             perspiciatis cum aut</p>
         </div>
 
-        <div>
+        <div class="text-center md:text-left">
           <a href="#" class="px-8 py-3 rounded-lg text-white bg-[#1877eb]"> Get a quote</a>
         </div>
       </div>
@@ -61,28 +80,30 @@
     <div class="w-full container mx-auto">
 
       <div class="flex space-x-5 items-center justify-around">
-        <a [routerLink]="['/service']" class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
-          <img src="assets/img/1phase.png" class="w-1/2 object-cover mx-auto " alt="">
-          <img src="assets/img/box4.png" class="w-1/2 object-cover mx-auto " alt="">
+        <div class="hidden md:block"><a [routerLink]="['/service']"
+            class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
+            <img src="assets/img/1phase.png" class="w-1/2 object-cover mx-auto " alt="">
+            <img src="assets/img/box4.png" class="w-1/2 object-cover mx-auto " alt="">
 
-        </a>
+          </a></div>
 
         <a [routerLink]="['/service']" class="bg-white w-full items-center flex-1 flex shadow-2xl h-[250px]">
           <img src="assets/img/panel.png" class=" object-cover " alt="">
 
         </a>
-        <a [routerLink]="['/service']" class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
-          <img src="assets/img/service.jpeg" class="w-1/2 object-cover mx-auto flex-1" alt="">
-          <img src="assets/img/service2jpeg.jpeg" class="w-1/2 object-cover mx-auto flex-1" alt="">
+        <div class="hidden md:block"><a [routerLink]="['/service']"
+            class="bg-white w-full flex-1 flex shadow-2xl h-[250px]">
+            <img src="assets/img/service.jpeg" class="w-1/2 object-cover mx-auto flex-1" alt="">
+            <img src="assets/img/service2jpeg.jpeg" class="w-1/2 object-cover mx-auto flex-1" alt="">
 
-        </a>
+          </a></div>
       </div>
     </div>
   </div>
 </section>
 
 
-<section class="w-full p-16"
+<section class="w-full p-4 md:p-16"
   style="background-image:url('/assets/img/bg.jpg'); background-repeat: no-repeat; background-size: cover;" #about>
   <div class="container mx-auto mt-16">
     <p class="text-xl font-bold text-[#1877eb]">Why You Should Choose Us ?</p>
@@ -122,23 +143,24 @@
   </div>
 </section>
 
-<section class="pt-20 container mx-auto mb-14">
-  <div class="text-center pt-16">
-    <a [routerLink]="['/service']" class="text-[#1877eb] mx-auto text-3xl font-bold">TETRAELECTRIC SOLUTIONS LTD.
+<section class="md:pt-20 pt-10 container mx-auto mb-14">
+  <div class="text-center md:pt-16 pt-0">
+    <a [routerLink]="['/service']" class="text-[#1877eb] mx-auto text-xl md:text-3xl font-bold">TETRAELECTRIC SOLUTIONS
+      LTD.
       Products</a>
     <hr class=" border-[#1877eb] w-48 mx-auto border-2 mt-1">
-    <p class="pt-3 w-1/2 mx-auto">We provides premium goods that adhere to all international
+    <p class="pt-3 w-full md:w-1/2 mx-auto">We provides premium goods that adhere to all international
       requirements. Our team members are manufacturing
       professionals who can provide OEM and ODM services in accordance with your unique needs.
     </p>
-    <div class="text-right">
+    <div class="text-center pt-4 md:pt-0 md:text-right">
       <button [routerLink]="['/service']" class="bg-[#1877eb] hover:bg-black rounded text-white py-2 px-4">View ALl
         Products <i class="fa fa-arrow-right"></i></button>
     </div>
   </div>
 
   <div class="container mx-auto mt-16">
-    <div class="flex md:flex-row  flex-col space-x-10 mt-4">
+    <div class="flex md:flex-row  flex-col space-x-0 md:space-x-10 mt-4">
       <div class="p-4 shadow-2xl border hover:shadow-slate-700 ">
         <img src="assets/img/panel.jpeg" alt="" class="items-center mx-auto">
         <p class="font-bold text-xl text-[#1877eb] text-center mt-8">Low Voltage Distribution Panel</p>
@@ -209,7 +231,7 @@
     <div class="text-center pt-16">
       <p class="text-[#1877eb] text-3xl font-bold">Contact us</p>
       <hr class=" border-[#1877eb] w-24 mx-auto border mt-1">
-      <p class="pt-3 w-1/2 mx-auto">If you have enquiries you can email us at
+      <p class="pt-3 w-full md:w-1/2 mx-auto">If you have enquiries you can email us at
         <span class="text-[#1877eb] cursor-pointer">sales@tetraesolution.com.</span> You can also drop a message via the
         form below
         or speak with a customer service agent at your local help desk. See Phone contact list below..
@@ -217,26 +239,26 @@
     </div>
 
     <div>
-      <div class=" flex flex-col md:flex-row justify-around pb-12 pt-16">
+      <div class=" flex flex-col md:flex-row justify-around pb-12 pt-6 md:pt-16">
         <div class="w-full">
           <form action="https://mailthis.to/ruth" method="POST" encType="multipart/form-data">
             <div class="mt-8">
               <label>Full Name</label>
-              <input placeholder=" John Doe" class="form-input" name="name" required>
+              <input placeholder=" John Doe" class="form-input" name="Name" required>
             </div>
             <div class="mt-8">
               <label>Email</label>
-              <input placeholder=" johndoe@johndoe.com" name="sender" class="form-input" required>
+              <input placeholder=" johndoe@johndoe.com" name="Email" class="form-input" required>
             </div>
             <div class="mt-8">
               <label>Message</label>
-              <textarea placeholder=" Type your message here" name="message" class=" h-32 p-3 mt-2" required></textarea>
+              <textarea placeholder=" Type your message here" name="Message" class=" h-32 p-3 mt-2" required></textarea>
             </div>
             <div>
               <input type="hidden" name="_confirmation" value="">
 
             </div>
-            <div class="mt-8  ">
+            <div class="mt-8 text-center md:text-left ">
               <button class="rounded-lg bg-[#1877eb]  text-white px-12 py-2" type="submit" value="Send">Submit </button>
             </div>
           </form>
@@ -272,10 +294,10 @@
   </div>
 </section>
 
-<footer class="w-full h-[50vh] bg-slate-900 pt-16">
+<footer class="w-full h-auto bg-slate-900 pt-16">
   <div class="container mx-auto">
-    <div class="flex  ">
-      <div class="w-2/3">
+    <div class="flex flex-col md:flex-row  ">
+      <div class="w-full md:w-2/3">
         <p class="text-[#1877eb] text-2xl">TETRAELECTRIC SOLUTIONS LTD</p>
         <p class="text-white pt-4">provides premium goods that adhere to all international requirements. Our team
           members are
@@ -283,19 +305,19 @@
           professionals who can provide OEM and ODM services in accordance with your unique needs.
         </p>
       </div>
-      <div class="text-white w-2/3 pl-10">
-        <p class="text-[#1877eb] text-2xl">Contact us</p>
+      <div class="text-white w-full pt-6 md:pt-0 md:w-2/3 pl-0 md:pl-10">
+        <p class="text-[#1877eb] text-2xl text-center md:text-left">Contact us</p>
         <div class="flex space-x-3 pt-4 ">
           <i class="fa fa-phone pt-1 text-[#1877eb]"></i>
           <p href="">Phone: +234 803 407 3880</p>
         </div>
         <div class="flex space-x-3 pt-4 ">
           <i class="fa fa-envelope pt-1 text-[#1877eb]"></i>
-          <p>Email： sales@tetraesolutions.com</p>
+          <p class="whitespace-nowrap">Email： sales@tetraesolutions.com</p>
         </div>
 
       </div>
-      <div class="text-white w-2/3">
+      <div class="text-white w-2/3 hidden md:block">
         <p class="text-[#1877eb] text-2xl">Our Company</p>
         <p>Home</p>
         <p>About</p>

@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceComponent implements OnInit {
 
+  showMenu: boolean = true;
   constructor() { }
   year: number = new Date().getFullYear();
 
   ngOnInit() {
+  }
+  toggleNav(){
+    this.showMenu = !this.showMenu;
   }
   scroll(el: HTMLElement) {
     el.scrollIntoView();
